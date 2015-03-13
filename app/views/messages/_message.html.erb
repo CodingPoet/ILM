@@ -1,0 +1,29 @@
+
+ <div class="col_fourth">
+  <div class="hover panel">
+    <div class="front">
+      <div class="box1">
+        <p><%= message.user.name %></p>
+      </div>
+    </div>
+
+    <div class="back">
+      <div class="box2">
+        <p><%= message.love_message %>
+          <%= message.tags %></p>
+          <%= link_to 'Edit', edit_message_path(message) %>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+<!-- <tr>
+  <td><%= message.user.name %></td>
+  <td><%= message.love_message %></td>
+  <td><%= message.tags %></td>
+  <td><%= message.last_seen_at.to_s(:short)  %></td>
+  <td><%= link_to 'Show', message %></td>
+  <td><%= link_to 'Edit', edit_message_path(message) %></td>
+  <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr> -->
+
