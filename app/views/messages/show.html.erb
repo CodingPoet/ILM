@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @message.user.name %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @message.love_message %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @message.tags %>
+</p>
+
+<p>
+  <strong>Last seen at:</strong>
+  <%= @message.last_seen_at.to_s(:short) %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
