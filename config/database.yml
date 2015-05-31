@@ -19,8 +19,8 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  username: lyndatutorial
-  password: lyndapassw0rd
+  username: clint
+  password: 3nt3rr
   host: localhost
   encoding: UTF8
   pool: 5
@@ -28,8 +28,8 @@ default: &default
 development:
   <<: *default
   database: ILM_development
-  username: lyndatutorial
-  password: lyndapassw0rd
+  username: clint
+  password: 3nt3rr
   host: localhost
   encoding: UTF8
 
@@ -66,8 +66,8 @@ development:
 test:
   <<: *default
   database: ILM_test
-  username: lyndatutorial
-  password: lyndapassw0rd
+  username: clint
+  password: 3nt3rr
   host: localhost
   encoding: UTF8
 

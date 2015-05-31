@@ -24,6 +24,9 @@
    background: #66F;
 }
 
+.tag {
+   color:blue;
+}
 
 
 body {
@@ -31,7 +34,7 @@ body {
    margin: 20px;
    font-family: Arial, Tahoma; 
    font-size: 20px; 
-   color: #666666; 
+   color: black; 
    text-align: center;  
 }
 p { color: #ffffff;  }
@@ -42,7 +45,7 @@ p { color: #ffffff;  }
 
 .col_half { width: 49%; }
 .col_third { width: 32%; }
-.col_fourth { width: 23.5%; }
+
 .col_fifth { width: 18.4%; }
 .col_sixth { width: 15%; }
 .col_three_fourth { width: 74.5%;}
@@ -57,8 +60,7 @@ p { color: #ffffff;  }
    display:inline;
    display: inline-block;
    float: left;
-   margin-right: 2%;
-   margin-bottom: 20px;
+   margin-right: 10px;
 }
 .end { margin-right: 0 !important; }
 
@@ -69,8 +71,11 @@ p { color: #ffffff;  }
 .wrapper{ width: 980px; margin: 0 auto;  background-color: #bdd3de; hoverflow: hidden;}
 
 .panel {
+   width: 290px;
+   height: 190px; 
    margin: 0 auto;
-   height: 130px;  
+   margin-bottom: 10px;
+   
    position: relative;
    -webkit-perspective: 600px;
    -moz-perspective: 600px;
@@ -129,6 +134,9 @@ p { color: #ffffff;  }
    -moz-transform: rotateX(0deg) rotateY(0deg);
 }
 .box1{
+   color: black;
+   background-image: url("/images/ducklings.jpg");
+   background-size: cover;
    background-color: #14bcc8;
    width: 250px;
    height: 150px;
@@ -139,7 +147,8 @@ p { color: #ffffff;  }
    -webkit-border-radius: 10px;
 }
 .box2{
-   background-color: #ff7e70;
+   color: black;
+   background-color: pink;
    width: 250px;
    height: 150px;
    margin: 0 auto;
