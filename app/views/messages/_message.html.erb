@@ -13,6 +13,7 @@
         <br>
           <span class="tag"><%= message.tags %></p></span>
           <%= link_to 'Edit', edit_message_path(message) %>
+          <span class="datestamp">Created on: <%= message.created_at.strftime("%d %B %y") %></span>
       </div>
     </div>
   </div>
