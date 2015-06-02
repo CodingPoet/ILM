@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 20150206234325) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "messages", force: true do |t|
+  create_table "messages", force: :cascade do |t|
     t.integer  "user_id"
     t.text     "love_message"
-    t.string   "tags"
+    t.string   "tags",         limit: 255
     t.datetime "last_seen_at"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -27,10 +27,10 @@ ActiveRecord::Schema.define(version: 20150206234325) do
 
   add_index "messages", ["user_id"], name: "index_messages_on_user_id", using: :btree
 
-  create_table "users", force: true do |t|
-    t.string   "name"
-    t.string   "password"
-    t.string   "photo"
+  create_table "users", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "password",   limit: 255
+    t.string   "photo",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
